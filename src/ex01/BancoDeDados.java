@@ -11,10 +11,10 @@ public class BancoDeDados {
 	} 
 	
 	public Produto selectProduto(int id) {
-		
+		return new Produto();
 	} 
 	
-	public void processarPagamento() {
+	public void processarPagamento(Cliente cliente, double valor) {
 		
 	}
 	
