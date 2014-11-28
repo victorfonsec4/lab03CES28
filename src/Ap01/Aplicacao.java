@@ -2,6 +2,7 @@ package Ap01;
 import ex01.Carrinho;
 import ex01.BancoDeDados;
 import ex01.Cliente;
+import ex01.Facade;
 import ex01.Produto;
 
 public class Aplicacao {
@@ -10,22 +11,19 @@ public class Aplicacao {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public static void main(String[] args){ 
 	
+		Facade f = new Facade();
+		
 		BancoDeDados banco = new BancoDeDados();
 		// registrar comprador 
-		Cliente cliente = Cliente.create("ze", 123);
-		Carrinho car = Carrinho.create(); 
-		cliente.adicionarCarrinho(car);
+		f.registrar("ze", 123);
 		// realizar uma compra
-		Produto produto = banco.selectProduto(223);
-		cliente.getCarrinho().adicionar(produto); 
+		f.comprar(223, 123);
 		// realizar outra compra
-		Produto produto2 = banco.selectProduto(342); 
-		cliente.getCarrinho().adicionar(produto2);
+		f.comprar(342, 123);
 		// fechar compra
-		double valor = cliente.getCarrinho().getTotal();
-		banco.processarPagamento(cliente, valor);
+		f.fecharCompra(123);
 	}
 }
