@@ -15,12 +15,14 @@ public class Mercado{
 	}
 	
 	public void registrar(String nome, int clienteId) { 
+		System.out.println("Registrando cliente "+nome+" com id: "+clienteId);
 		Cliente cliente = Cliente.create(nome, clienteId);
 		Carrinho car = Carrinho.create();
 		cliente.adicionarCarrinho(car);
 	}
 	
 	public void comprar(int prodId, int clienteId) {
+		System.out.println("Produto com id: "+prodId+" comprado pelo cliente de id: "+clienteId);
 		Cliente cliente = banco.selectCliente(clienteId);
 		Produto produto = banco.selectProduto(prodId);
 		cliente.getCarrinho().adicionar(produto);
@@ -30,5 +32,6 @@ public class Mercado{
 		Cliente cliente = banco.selectCliente(clienteId);
 		double valor = cliente.getCarrinho().getTotal();
 		banco.processarPagamento(cliente, valor);
+		System.out.println("Cliente de id: "+clienteId+" fechou compra no valor de "+valor);
 	}
 }
