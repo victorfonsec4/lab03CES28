@@ -1,8 +1,19 @@
 package ex01;
 
 public class Facade{
-	Mercado mercado = Mercado.create();
-	
+	static Facade instance = null;
+	Mercado mercado;
+
+	private Facade(){
+		mercado = Mercado.create();
+	}
+
+	public static Facade create(){
+		if(instance == null)
+			instance = new Facade();
+		return instance;
+	}
+
 	public void registrar(String nome, int clienteId) {
 		mercado.registrar(nome, clienteId);
 	}
