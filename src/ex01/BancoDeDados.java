@@ -21,7 +21,6 @@ public class BancoDeDados {
 	} 
 	
 	public void processarPagamento(Cliente cliente, double valor) {
-		
 	}
 	
 	public void registrar(String nome, int clienteId){

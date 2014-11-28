@@ -7,10 +7,6 @@ import ex01.Produto;
 
 public class Aplicacao {
 
-	public Aplicacao() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public static void main(String[] args){ 
 	

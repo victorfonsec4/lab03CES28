@@ -14,6 +14,7 @@ public class Produto {
 		return new Produto(nome, id, preco);
 	}
 
+
 	public double getPreco(){
 		return preco;
 	}
