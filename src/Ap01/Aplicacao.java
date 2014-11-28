@@ -1,9 +1,9 @@
 package Ap01;
-import ex01.Carrinho;
-import ex01.BancoDeDados;
-import ex01.Cliente;
-import ex01.Facade;
-import ex01.Produto;
+import MercadoVirtual.BancoDeDados;
+import MercadoVirtual.Carrinho;
+import MercadoVirtual.Cliente;
+import MercadoVirtual.Facade;
+import MercadoVirtual.Produto;
 
 public class Aplicacao {
 

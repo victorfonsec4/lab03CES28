@@ -1,4 +1,4 @@
-package ex01;
+package MercadoVirtual;
 
 public class Produto {
 	private String nome;
