@@ -22,7 +22,6 @@ public class BancoDeDados {
 	} 
 	
 	public void processarPagamento(Cliente cliente, double valor) {
-		
 	}
 	
 }
