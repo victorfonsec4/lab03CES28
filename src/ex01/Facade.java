@@ -3,9 +3,7 @@ package ex01;
 public class Facade{
 
 	public void registrar(String nome, int clienteId) { 
-		Cliente cliente = Cliente.create(nome, clienteId);
-		Carrinho car = Carrinho.create();
-		cliente.adicionarCarrinho(car);
+		banco.registrar(nome, clienteId);
 	}
 	
 	public void comprar(int prodId, int clienteId) {

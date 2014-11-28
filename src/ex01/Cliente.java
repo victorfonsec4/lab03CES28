@@ -2,7 +2,6 @@ package ex01;
 
 public class Cliente {
 
-	private static Cliente instance = null;
 	private String _nome;
 	private int _id;
 	private Carrinho _carrinho;
@@ -13,10 +12,7 @@ public class Cliente {
 	}
 	
 	public static Cliente create(String nome, int id) {
-		if (instance == null)
 			return new Cliente(nome, id);
-		else
-			return instance;
 	} 
 	
 	public void adicionarCarrinho(Carrinho c) {
