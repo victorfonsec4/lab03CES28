@@ -3,10 +3,6 @@ import ex01.Carrinho;
 import ex01.BancoDeDados;
 import ex01.Produto;
 
-import ex01.BancoDeDados;
-import ex01.Carrinho;
-import ex01.Cliente;
-
 public class Aplicacao {
 
 	public Aplicacao() {
