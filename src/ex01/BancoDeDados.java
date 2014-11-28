@@ -1,17 +1,24 @@
 package ex01;
 
+import java.util.Vector;
+
 public class BancoDeDados {
+	Vector<Produto> produtos;
+	Vector<Cliente> clientes;
 
 	public BancoDeDados() {
-		// TODO Auto-generated constructor stub
+		produtos = new Vector<Produto>();
+		clientes = new Vector<Cliente>();
+		produtos.add(Produto.create("testeProd", 0, 10));
+		clientes.add(Cliente.create("testeCli", 0));
 	}
 
 	public Cliente selectCliente(int id) {
-		return new Cliente();
+		return clientes.get(0);
 	} 
 	
 	public Produto selectProduto(int id) {
-		return new Produto();
+		return produtos.get(0);
 	} 
 	
 	public void processarPagamento(Cliente cliente, double valor) {
