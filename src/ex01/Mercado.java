@@ -1,14 +1,14 @@
 package ex01;
 
 public class Mercado{
-	Mercado instance = null;
+	static Mercado instance = null;
 	BancoDeDados banco;
 
 	private Mercado(){
 		banco = new BancoDeDados();
 	}
 
-	public Mercado create(){
+	public static Mercado create(){
 		if(instance == null)
 			instance = new Mercado();
 		return instance;
