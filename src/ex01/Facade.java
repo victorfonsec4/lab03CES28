@@ -1,7 +1,9 @@
 package ex01;
 
 public class Facade{
-
+	
+	BancoDeDados banco = new BancoDeDados();
+	
 	public void registrar(String nome, int clienteId) { 
 		Cliente cliente = Cliente.create(nome, clienteId);
 		Carrinho car = Carrinho.create();
@@ -19,6 +21,5 @@ public class Facade{
 		double valor = cliente.getCarrinho().getTotal();
 		banco.processarPagamento(cliente, valor);
 	}
-	
-	BancoDeDados banco = new BancoDeDados(); 
+ 
 }
