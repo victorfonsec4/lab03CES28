@@ -1,7 +1,9 @@
 package ex01;
 
-public class BancoDeDados {
+import java.util.Dictionary;
 
+public class BancoDeDados {
+	
 	public BancoDeDados() {
 		// TODO Auto-generated constructor stub
 	}
