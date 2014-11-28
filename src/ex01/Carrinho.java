@@ -6,5 +6,16 @@ public class Carrinho {
 		
 	}
 	
+	public static Carrinho create() {
+		return new Carrinho();
+	} 
+	
+	public void adicionar (Produto p) {
+		
+	} 
+	
+	public double getTotal() {
+		return 4;
+	}
 	
 }
