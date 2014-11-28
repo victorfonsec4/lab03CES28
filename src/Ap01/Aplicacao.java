@@ -1,9 +1,9 @@
 package Ap01;
-import MercadoVirtual.BancoDeDados;
 import MercadoVirtual.Carrinho;
 import MercadoVirtual.Cliente;
 import MercadoVirtual.Facade;
 import MercadoVirtual.Produto;
+import Repositorio.BancoDeDados;
 
 public class Aplicacao {
 

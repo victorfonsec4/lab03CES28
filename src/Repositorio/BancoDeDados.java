@@ -1,4 +1,8 @@
-package MercadoVirtual;
+package Repositorio;
+
+import MercadoVirtual.Carrinho;
+import MercadoVirtual.Cliente;
+import MercadoVirtual.Produto;
 
 public class BancoDeDados {
 	Produto produto;

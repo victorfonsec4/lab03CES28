@@ -1,5 +1,7 @@
 package MercadoVirtual;
 
+import Repositorio.BancoDeDados;
+
 public class Mercado{
 	static Mercado instance = null;
 	BancoDeDados banco;
