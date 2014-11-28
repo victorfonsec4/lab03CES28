@@ -10,7 +10,7 @@ public class Aplicacao {
 
 	public static void main(String[] args){ 
 	
-		Facade f = new Facade();
+		Facade f = Facade.create();
 		
 		BancoDeDados banco = new BancoDeDados();
 		// registrar comprador 
